@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "TeleSys";
+    src: url("/fonts/TeleSys.ttf");
+}
+
+@layer base {
+    a,
+    button {
+        @apply select-none;
+    }
+}
+
+@layer components {
+    .pixelated-corners {
+        clip-path: polygon(0px calc(100% - 8px), 4px calc(100% - 8px), 4px calc(100% - 4px), 8px calc(100% - 4px), 8px 100%, calc(100% - 8px) 100%, calc(100% - 8px) calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) calc(100% - 8px), 100% calc(100% - 8px), 100% 8px, calc(100% - 4px) 8px, calc(100% - 4px) 4px, calc(100% - 8px) 4px, calc(100% - 8px) 0px, 8px 0px, 8px 4px, 4px 4px, 4px 8px, 0px 8px);
+    }
+
+    .pixelated-corners-sm {
+        clip-path: polygon(0px calc(100% - 4px), 4px calc(100% - 4px), 4px 100%, calc(100% - 4px) 100%, calc(100% - 4px) calc(100% - 4px), 100% calc(100% - 4px), 100% 4px, calc(100% - 4px) 4px, calc(100% - 4px) 0px, 4px 0px, 4px 4px, 0px 4px);
+    }
+}
